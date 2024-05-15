@@ -1,0 +1,10 @@
+<div class="w-72 min-h-96 p-5 bg-purple-200 rounded-xl flex flex-col justify-center items-center">
+  <img [src]="product.getImgUrl()" [alt]="product.getProduct()" width="300px" />
+  <h3>{{ product.getProduct() }}</h3>
+  <app-badge></app-badge>
+
+  <span>{{ product.getPrice() }}</span>
+  <p>{{ product.getDescription() }}</p>
+  <button (click)="addToCart()">ADD TO CART</button>
+</div>
+
